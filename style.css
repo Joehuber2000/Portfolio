@@ -47,10 +47,16 @@ p {
 }
 
 footer {
-    color: whitesmoke;
+    color: white;
     position: absolute;
-    bottom: 0;
+    bottom: -75%;
     font-size: 1vw;
+    padding: 100px 0 100px;
+    /* background-color: black; */
+    width: 100%;
+    /* border-top: 2px solid slategray; */
+    border-radius: 10px;
+    opacity: .9;
     /* text-align: center; */
 }
 
@@ -69,10 +75,15 @@ footer {
     letter-spacing: 2px;
 }
 
+#copy {
+    position: absolute;
+    bottom: 0%;
+}
+
 /* Attribute Styles */
 
 a:link:hover {
-    color: palevioletred;
+    color: rgb(238, 49, 49);
 }
 
 link:visited {
@@ -124,7 +135,7 @@ a:link {
 
 .topnav a:hover {
     color: white;
-    border-bottom: 4px solid palevioletred;
+    border-bottom: 4px solid rgb(238, 49, 49);
 }
 
 /* .topnav a.active {
@@ -222,4 +233,13 @@ a:link {
     font-weight: bold;
     list-style: none;
     opacity: .7;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10%); 
+    width: 40px;
+    
 }
