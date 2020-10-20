@@ -131,7 +131,7 @@ div.hire:hover {
     }
 
     .arrow {
-        top: 45%;
+        top: 47%;
     }
 
     div.topnav a {
@@ -164,16 +164,27 @@ div.hire:hover {
         width: 4vw;
     }
 
-    #about {
+    h2#about {
         /* color: rgb(29, 28, 28); */
+        position: absolute;
+        top: 220vw;
     }
 
     #portfolio {
         /* color: rgb(29, 28, 28); */
+        position: absolute;
+        top: 320vw;
     }
 
     #contact {
         /* color: rgb(29, 28, 28); */
+        position: absolute;
+        top: 420vw;
+    }
+
+    footer a#copy {
+        position: absolute;
+        top: 520vw;
     }
 }
 
@@ -280,5 +291,5 @@ div.hire:hover {
 
 .stretch {
     width:100%;
-    height:100%;
+    height: 50%;
 }
