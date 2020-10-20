@@ -78,13 +78,10 @@ button:hover {
 /* Media Styles  */
 
 @media screen and (max-width: 420px) {
-    html {
-        width: 100%;
-    }
 
     h1 {
         top: 15%;
-        font-size: 25px;
+        font-size: 23px;
     }
 
     p.content {
@@ -93,7 +90,7 @@ button:hover {
     }
 
     .arrow {
-        top: 53%;
+        top: 45%;
     }
 
     div.topnav a {
@@ -103,24 +100,33 @@ button:hover {
 
     button.hire {
         position: absolute;
-        top: 45%;
+        top: 38%;
         left: 20%;
         transform: translateX(15%);
     }
 
     button.website {
         position: absolute;
-        top: 45%;
+        top: 38%;
         right: 20%;
         transform: translateX(-15%);
     }
 
     body#computer {
-        background-size: 420px 475px;
+        background-size: 430px 430px;
+        width: 100%;
     }
 
     #name {
         font-size: 2em;
+    }
+
+    img.ilogo {
+        width: 4vw;
+    }
+
+    img.tlogo {
+        width: 4vw;
     }
 }
 
