@@ -95,7 +95,8 @@ button:hover {
 
     p.content {
         top: 25%;
-        width: 100vw;
+        width: 80vw;
+        opacity: .8;
     }
 
     .arrow {
