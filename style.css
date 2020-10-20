@@ -1,9 +1,5 @@
 /* Main Styles */
 
-/* * {
-    box-sizing: border-box;
-} */
-
 body {
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 1px;
@@ -17,33 +13,14 @@ div.name2 {
     font-size: 1.5vw;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 h1 { 
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
-    /* font-size: 4vw; */
     transform: translateX(-50%) translateY(-50%);
     color: whitesmoke;
-    border-radius: 5px;
-    text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-p {
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
-    border-radius: 10px;
-    max-width: 50vw;
-    font-weight: bold;
 }
 
 footer {
@@ -52,12 +29,10 @@ footer {
     bottom: -75%;
     font-size: 1vw;
     padding: 100px 0 100px;
-    /* background-color: black; */
     width: 100%;
-    /* border-top: 2px solid slategray; */
     border-radius: 10px;
     opacity: .9;
-    /* text-align: center; */
+    text-align: center;
 }
 
 /* ID Styles */
@@ -78,6 +53,7 @@ footer {
 #copy {
     position: absolute;
     bottom: 0%;
+    left: 0%;
 }
 
 /* Attribute Styles */
@@ -94,30 +70,64 @@ a:link {
     color: whitesmoke;
     text-decoration: none;
 }
-/* Media Styles */
 
-/* @media screen (min-width: 601px) {
-    div.topnav {
-        font-size: 80px;
-    }
+button:hover {
+    border: 2px solid white;
 }
 
-@media screen and (max-width: 600px) {
-    div.example {
-        font-size: 30px;
-    }
-} */
+/* Media Styles  */
 
-@media (min-width: 950px) {
+@media screen and (max-width: 420px) {
+    html {
+        width: 100%;
+    }
+
     h1 {
-        font-size: 3vw;
+        top: 15%;
+        font-size: 25px;
+    }
+
+    p.content {
+        top: 25%;
+        width: 100vw;
+    }
+
+    .arrow {
+        top: 53%;
+    }
+
+    div.topnav a {
+        font-size: 10px;
+        padding: 8px 6px;
+    }
+
+    button.hire {
+        position: absolute;
+        top: 45%;
+        left: 20%;
+        transform: translateX(15%);
+    }
+
+    button.website {
+        position: absolute;
+        top: 45%;
+        right: 20%;
+        transform: translateX(-15%);
+    }
+
+    body#computer {
+        background-size: 420px 475px;
+    }
+
+    #name {
+        font-size: 2em;
     }
 }
 
 /* Class Styles */
 
 .topnav {
-    width: 100%;
+    width: 100vw;
     box-sizing: content-box;
     margin-right: 200px;
     size: cover;
@@ -130,32 +140,18 @@ a:link {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    /* font-size: 17px; */
 }
 
 .topnav a:hover {
-    color: white;
-    border-bottom: 4px solid rgb(238, 49, 49);
-}
-
-/* .topnav a.active {
-   
-} */
-
-.name {
-    float: left;
-    color: #f2f2f2;
-    padding: 0px 16px 14px 16px;
-    text-decoration: none;
-    /* font-size: 17px; */
-    /* size: cover; */
+    border-bottom: 3px solid rgb(238, 49, 49);
 }
 
 .logo {
+    float: left;
     border-radius: 500px;
-    width: 40px;
+    width: 7vw;
     border-bottom: none;
-    size: 2vw;
+    padding-right: 0;
 }
 
 .name2 {
@@ -163,21 +159,21 @@ a:link {
     color: #f2f2f2;
     padding: 5px 16px 14px 8px;
     text-decoration: none;
-    /* font-size: 17px; */
 }
 
 .tlogo {
     float: left;
     width: 3vw;
-    border-radius: 30em;
-    border-color: black;
-    background-color: white;
+    border-radius: 2em;
+    margin-top: 5px;
 }
 
 .ilogo {
     float: left;
     width: 3vw;
-    border-radius: 30em;
+    border-radius: 2em;
+    background-color: white;
+    margin: 5px 10px;
 }
 
 .content {
@@ -188,7 +184,7 @@ a:link {
     transform: translateX(-50%);
     text-align: center;
     border-radius: 10px;
-    max-width: 50vw;
+    width: 50vw;
     font-weight: bold;
     list-style: none;
     opacity: .7;
@@ -197,12 +193,11 @@ a:link {
 .hire {
     background-color: lightslategray ;
     position: absolute;
-    bottom: 20%;
+    top: 80%;
     left: 25%;
     font-size: 1.5vw;
     padding: 10px;
     font-weight: bold;
-    border: 2px solid lightgray;
     opacity: .7;
     color: black;
     border-radius: 10px;
@@ -211,11 +206,10 @@ a:link {
 .website {
     background-color: lightslategray;
     position: absolute;
-    bottom: 20%;
+    top: 80%;
     right: 25%;
     font-size: 1.5vw;
     opacity: .7;
-    border: 2px solid lightgray;
     padding: 10px;
     font-weight: bold;
     border-radius: 10px;
@@ -228,11 +222,11 @@ a:link {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    border-radius: 10px;
     max-width: 50vw;
     font-weight: bold;
     list-style: none;
     opacity: .7;
+    padding: 0;
 }
 
 .arrow {
@@ -241,4 +235,8 @@ a:link {
     left: 50%;
     transform: translateX(-50%) translateY(-10%); 
     width: 40px;
+}
+
+.contact {
+    text-align: center;
 }
