@@ -110,14 +110,14 @@ button:hover {
 
     button.hire {
         position: absolute;
-        top: 38%;
+        top: 39%;
         left: 20%;
         transform: translateX(15%);
     }
 
     button.website {
         position: absolute;
-        top: 38%;
+        top: 39%;
         right: 20%;
         transform: translateX(-15%);
     }
